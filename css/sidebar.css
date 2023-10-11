@@ -1,0 +1,37 @@
+#sidebar {
+	/* view port height */
+	height: calc(100vh - 60px);
+	width: 15%;
+	background: lightgoldenrodyellow;
+	position: fixed;
+	left: 0;
+	top: 60px;
+	overflow: scroll;
+	font-family: '微軟正黑體';
+}
+
+#sidebar .menu {
+	display: inline-block;
+	width: 85%;
+	padding: 1rem;
+}
+
+#sidebar .menu li {
+	list-style: none;
+	display: block;
+	padding: 5px;
+	font-size: 1rem;
+}
+
+#sidebar .menu li a {
+	color: black;
+	text-decoration: none;
+	display: block;
+	padding: 0.5rem 1.5rem;
+	transition: 0.5s;
+}
+
+#sidebar .menu li a:hover {
+	border-radius: 5px;
+	background: grey;
+}

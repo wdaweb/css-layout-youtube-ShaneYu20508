@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/all.css">
     <style>
         * {
             margin: 0;
@@ -19,16 +21,6 @@
             top: 0;
         }
 
-        #sidebar {
-            /* view port height */
-            height: calc(100vh - 60px);
-            width: 15%;
-            background: lightgoldenrodyellow;
-            position: fixed;
-            left: 0;
-            top: 60px;
-        }
-
         #content {
             width: calc(100% - 15%);
             margin-top: 60px;
@@ -41,36 +33,37 @@
 <body>
     <div id="header"></div>
     <div id="sidebar">
-        <ul>
-            <li>首頁</li>
-            <li>Shorts</li>
-            <li>訂閱內容</li>
+
+        <ul class="menu">
+            <li><i class="fa-solid fa-house"></i><a href="">首頁</a></li>
+            <li><a href="">Shorts</a></li>
+            <li><a href="">訂閱內容</a></li>
             <hr>
-            <li>媒體庫</li>
-            <li>觀看紀錄</li>
+            <li><a href="">媒體庫</a></li>
+            <li><a href="">觀看紀錄</a></li>
             <hr>
-            <li>登入</li>
+            <li><a href="">登入</a></li>
             <hr>
             <h3>探索</h1>
-                <li>發燒影片</li>
-                <li>音樂</li>
-                <li>電影</li>
-                <li>直播</li>
-                <li>遊戲</li>
-                <li>新聞</li>
-                <li>體育</li>
+                <li><a href="">發燒影片</a></li>
+                <li><a href="">音樂</a></li>
+                <li><a href="">電影</a></li>
+                <li><a href="">直播</a></li>
+                <li><a href="">遊戲</a></li>
+                <li><a href="">新聞</a></li>
+                <li><a href="">體育</a></li>
                 <hr>
-                <li>瀏覽頻道</li>
+                <li><a href="">瀏覽頻道</a></li>
                 <hr>
                 <h3>更多Youtube功能</h1>
-                    <li>YouTube Premiun</li>
-                    <li>YouTube Music</li>
-                    <li>YouTube Kids</li>
+                    <li><a href="">YouTube Premiun</a></li>
+                    <li><a href="">YouTube Music</a></li>
+                    <li><a href="">YouTube Kids</a></li>
                     <hr>
-                    <li>設定</li>
-                    <li>檢舉紀錄</li>
-                    <li>說明</li>
-                    <li>提供意見</li>
+                    <li><a href="">設定</a></li>
+                    <li><a href="">檢舉紀錄</a></li>
+                    <li><a href="">說明</a></li>
+                    <li><a href="">提供意見</a></li>
                     <hr>
         </ul>
 
