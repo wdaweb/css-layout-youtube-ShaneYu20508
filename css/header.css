@@ -1,102 +1,176 @@
 #header {
-    width: 100%;
-    height: 60px;
-    background: lightblue;
-    position: fixed;
-    left: 0;
-    top: 0;
+	width: 100%;
+	height: 60px;
+	background: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	z-index: 1;
+
+	/* 重要一定要有 */
+	font-size: 1rem;
+	/* justify-content: center; */
 }
 
-#header div {
-    display: inline-block;
-}
+#top-left {
+	width: 30%;
+	height: 60px;
+	/* border: 1px solid black; */
+	position: relative;
 
-#guide {
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    margin-left: 20px;
-    background: gray;
-}
-
-#logo {
-    width: 100px;
-    height: 60px;
-    border: 1px solid black;
-    background: red;
-}
-
-#search {
-    width: 550px;
-    height: 60px;
-    border: 1px solid black;
-    background: yellow;
-    margin-left: 400px;
-}
-
-#button {
-    width: 80px;
-    height: 60px;
-    border: 1px solid black;
-    background: purple;
-}
-
-#voice {
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    background: pink;
-}
-
-#setting {
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    background: greenyellow;
-    margin-left: 400px;
-}
-
-#login-top {
-    width: 60px;
-    height: 60px;
-    border: 1px solid black;
-    background: chocolate;
-}
-
-
-/* #menu div {
-    display: inline-block;
+	/* 讓物件和邊框一樣大且可以水平編排 */
+	display: flex;
+	/* 使物件維持原本大小並且對齊中間 */
+	align-items: center;
 }
 
 #guide {
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 10px;
+	/* margin-left: 20px; */
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	/* border: 1px solid black; */
+	/* background: lightcoral; */
+
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	/* display: flex; */
+	/* justify-content: center;
+	align-items: center; */
 }
 
-#logo {
-    border: 1px solid black;
-    margin-bottom: 50px;
+#top-left a {
+	text-decoration: none;
+	display: block;
+	/* background: red; */
+	font-size: 1rem;
+}
+
+#top-left #guide:hover {
+	background: rgba(153, 151, 151, 0.5);
+	transition: 0.25s;
 }
 
 #logo img {
-    width: 120px;
-    height: 35px;
+	width: 95px;
+	height: 21px;
+	margin-left: 60px;
 }
 
-#search {
-    left: 50%;
-    margin-left: 100px;
+#top-mid {
+	width: 40%;
+	height: 60px;
+	/* border: 1px solid black; */
+	position: relative;
 
+	/* 讓物件和邊框一樣大且可以水平編排 */
+	display: flex;
+	/* 使物件維持原本大小並且對齊中間 */
+	align-items: center;
 }
 
-#text {
-    width: 500px;
-    height: 40px;
-    border-radius: 50px 0 0 50px;
-} */
+#top-mid .search {
+	width: 535px;
+	height: 40px;
+	border-radius: 50px 0 0 50px;
+	margin-left: 60px;
+	font-size: 1rem;
+}
+
+#top-mid input:focus {
+	outline: none;
+}
+
+#top-mid .top-btn {
+	width: 65px;
+	height: 40px;
+	border-radius: 0 50px 50px 0;
+	margin-left: -2px;
+	cursor: pointer;
+}
+
+#voice {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	top: 10px;
+	left: 90%;
+	/* border: 1px solid black; */
+
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	position: absolute;
+}
+
+#top-mid a {
+	text-decoration: none;
+	display: block;
+	/* background: red; */
+	font-size: 1rem;
+}
+
+#top-mid #voice:hover {
+	background: rgba(153, 151, 151, 0.5);
+	transition: 0.25s;
+}
+
+#top-right {
+	width: 30%;
+	height: 60px;
+	/* border: 1px solid black; */
+	position: relative;
+
+	/* 讓物件和邊框一樣大且可以水平編排 */
+	display: flex;
+	/* 使物件維持原本大小並且對齊中間 */
+	align-items: center;
+}
+
+#set {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-left: 400px;
+
+	text-align: center;
+	float: left;
+	line-height: 40px;
+	position: absolute;
+}
+
+#set a {
+	text-decoration: none;
+	display: block;
+
+	font-size: 1rem;
+}
+
+#top-login {
+	margin-left: 450px;
+	width: 84px;
+	height: 36px;
+	display: flex;
+	font-size: 0.9rem;
+	border: 1px solid rgba(161, 161, 161, 0.4);
+	border-radius: 20px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: rgb(67, 125, 233);
+}
+
+#top-login:hover {
+	cursor: pointer;
+	background: rgb(209, 233, 251);
+	transition: 0.2s;
+}
+
+#toplog-icon {
+	margin-right: 6px;
+}

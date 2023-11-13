@@ -1,0 +1,283 @@
+#content-top {
+	width: 100%;
+	height: 56px;
+	margin-top: 60px;
+	margin-left: 250px;
+	position: fixed;
+	z-index: 1;
+	background: white;
+	left: 0;
+	top: 0;
+}
+
+#my-tab li {
+	height: 32px;
+	padding-left: 12px;
+	padding-right: 12px;
+	margin: 12px;
+	margin-left: 0;
+	background: rgba(161, 161, 161, 0.2);
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 32px;
+}
+
+#my-tab li:hover {
+	background: rgba(161, 161, 161, 0.4);
+	transition: 0.2s;
+}
+
+#my-tab li:nth-child(1) {
+	background: black;
+	color: white;
+}
+
+#content {
+	width: calc(100% - 250px);
+	margin-top: 116px;
+	margin-left: 250px;
+	padding-top: 24px;
+	/* background: lawngreen; */
+	/* display: flex; */
+}
+
+/* ---------------------------------------------- */
+.vid-area {
+	width: calc(100%- 250px);
+	/* height: 330px; */
+	/* background: lightseagreen; */
+}
+
+.video {
+	width: 330px;
+	height: 280px;
+	/* border: 1px solid black; */
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-bottom: 40px;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.pic {
+	width: 330px;
+	height: 185px;
+	box-sizing: border-box;
+	position: relative;
+	/* border: 1px solid black; */
+}
+
+.pic img {
+	width: 330px;
+	height: 185px;
+	position: absolute;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.pic img:hover {
+	border-radius: 0 0 0 0;
+	transition: 0.5s;
+}
+
+.time {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+	font-size: 0.8rem;
+	background: black;
+	color: white;
+	border-radius: 5px 5px 5px 5px;
+	padding: 0;
+}
+
+.channel {
+	width: 36px;
+	height: 36px;
+	/* border: 1px solid black; */
+	margin-top: 12px;
+	margin-right: 12px;
+	position: absolute;
+}
+
+.channel img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.title {
+	padding-right: 24px;
+	width: 258px;
+	height: 42px;
+	margin-left: 48px;
+	margin-top: 12px;
+	font-size: 0.9rem;
+	overflow: hidden;
+	float: left;
+	/* background-color: #fff; */
+}
+
+.title p {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.vid-btn {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0px;
+	/* border: 1px solid black; */
+}
+
+#vid-btn {
+	display: none;
+}
+
+.vid-btn:hover #vid-btn {
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	transition: 0.2s;
+}
+
+.channel-name {
+	font-size: 0.85rem;
+	color: #888;
+	margin-left: 48px;
+	margin-bottom: -2px;
+}
+
+.view-when {
+	font-size: 0.85rem;
+	color: #888;
+	margin-left: 48px;
+}
+
+/* ------------------------------ */
+.short-area {
+	width: calc(100%- 250px);
+	height: 484px;
+	padding-bottom: 17px;
+	margin-bottom: 48px;
+	/* background-color: lightpink; */
+	display: flex;
+}
+
+
+h2 {
+	font-family: '微軟正黑體';
+	height: 40px;
+	font-size: 18px;
+	font-weight: bolder;
+	background-color: #fff;
+	margin-left: 20px;
+	margin-bottom: 24px;
+}
+
+h2 img {
+	width: 20px;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.shorts {
+	width: 217px;
+	height: 464px;
+	margin-right: 8px;
+	margin-left: 8px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.short-pic {
+	width: 217px;
+	height: 385px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.short-pic img {
+	width: 217px;
+	height: 385px;
+	border-radius: 20px;
+}
+
+.short-title {
+	width: 193px;
+	height: 32px;
+	line-height: 16px;
+	padding-top: 12px;
+	padding-right: 24px;
+	font-size: 0.85rem;
+	color: black;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.short-view {
+	font-size: 0.85rem;
+	color: #888;
+	width: 100%;
+	height: 20px;
+	cursor: pointer;
+}
+
+.short-btn {
+	width: 40px;
+	height: 40px;
+	right: 00px;
+	position: absolute;
+	text-align: center;
+	line-height: 40px;
+}
+
+#short-btn {
+	display: none;
+}
+
+.short-btn:hover #short-btn {
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	transition: 0.2s;
+}
+
+#line {
+	margin-bottom: 50px;
+	position: relative;
+}
+
+#line hr {
+	color: #888;
+	border: 1px solid rgba(236, 231, 231, 1);
+}
+
+#more {
+	width: 358px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	height: 34px;
+	border: 1px solid #888;
+	border-radius: 30px;
+	position: absolute;
+	text-align: center;
+	line-height: 34px;
+	color: #888;
+}
+
+#more:hover {
+	cursor: pointer;
+}

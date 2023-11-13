@@ -7,289 +7,499 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/sidebar.css">
+    <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/all.css">
     <style>
         * {
             margin: 0;
-        }
-
-
-        #content {
-            width: calc(100% - 15%);
-            margin-top: 60px;
-            margin-left: 15%;
-            background: lightgreen;
         }
     </style>
 </head>
 
 <body>
     <div id="header">
-        <div id="guide"></div>
-        <div id="logo"></div>
-        <div id="search"></div>
-        <div id="button"></div>
-        <div id="voice"></div>
-        <div id="setting"></div>
-        <div id="login-top"></div>
+        <div id="top-left">
+            <div id="guide"><a href=""><i class="fa-solid fa-bars fa-lg" style="color: #000000;"></i></a></div>
+            <div id="logo"><img src="./image/youtube-logo-9.png"></div>
+        </div>
+
+        <div id="top-mid">
+            <input type="search" value="" class="search">
+            <button class="top-btn"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></button>
+            <div id="voice"><a href=""><i class="fa-solid fa-microphone fa-lg" style="color: #000000;"></i></a></div>
+        </div>
+
+        <div id="top-right">
+            <div id="set"><a href=""><i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #000000;"></i></a>
+            </div>
+            <div id="top-login">
+                <div id="toplog-icon"><i class="fa-regular fa-circle-user fa-lg"></i></div>
+                <div id="toplog-word">登入</div>
+            </div>
+        </div>
     </div>
+    <!-- ----------------------------------- -->
     <div id="sidebar">
-        <ul class="menu">
-            <li><a href=""><i class="fa-solid fa-house"></i>首頁</a></li>
-            <li><a href="">
-                    <icon-shape class="yt-spec-icon-shape">
-                        <div style="width: 17%; height: 17%; "><svg height="24" viewBox="0 0 24 24" width="24"
-                                focusable="false"
-                                style="pointer-events: none; display: inline-block; width: 100%; height: 100%;">
-                                <path
-                                    d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z">
-                                </path>
-                            </svg></div>
-                    </icon-shape>Shorts</a>
-            </li>
-            <li><a href=""><i class="fa-regular fa-square-caret-right"></i>訂閱內容</a></li>
+        <div id="menu">
+            <div class="area">
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-house fa-lg"></i></div>
+                    <div class="word">首頁</div>
+                </div>
+                <div class="li">
+                    <div id="short-img" class="icon"><img src="./image/YouTube_Shorts_29.png"></div>
+                    <div class="word">Shorts</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-regular fa-square-caret-right fa-lg"></i></div>
+                    <div class="word">訂閱內容</div>
+                </div>
+            </div>
             <hr>
-            <li><a href=""><i class="fa-solid fa-bookmark"></i>媒體庫</a></li>
-            <li><a href=""><i class="fa-solid fa-clock-rotate-left"></i> 觀看紀錄</a></li>
+            <div class="area">
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-bookmark fa-lg"></i></div>
+                    <div class="word">媒體庫</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-clock-rotate-left fa-lg"></i></div>
+                    <div class="word">觀看紀錄</div>
+                </div>
+            </div>
             <hr>
-            <p>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</p>
-            <span id="login"><a href=""><i class="fa-regular fa-circle-user"></i>登入</a></span>
+            <div id="log-area">
+                <p>登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。</p>
+                <div id="sidelog-btn">
+                    <div id="log-icon"><i class="fa-regular fa-circle-user fa-xl"></i></div>
+                    <div id="log-word"> 登入</div>
+                </div>
+            </div>
             <hr>
-            <h2>探索</h2>
-            <li><a href=""><i class="fa-solid fa-fire"></i>發燒影片</a></li>
-            <li><a href=""><i class="fa-solid fa-music"></i>音樂</a></li>
-            <li><a href=""><i class="fa-solid fa-clapperboard"></i>電影</a></li>
-            <li><a href=""><i class="fa-solid fa-tower-broadcast"></i>直播</a></li>
-            <li><a href=""><i class="fa-solid fa-gamepad"></i>遊戲</a></li>
-            <li><a href=""><i class="fa-regular fa-newspaper"></i>新聞</a></li>
-            <li><a href=""><i class="fa-solid fa-trophy"></i>體育</a></li>
-            <li><a href=""><i class="fa-solid fa-podcast"></i>Podcast</a></li>
+            <div class="area">
+                <h3>探索</h3>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-fire fa-lg"></i></div>
+                    <div class="word">發燒影片</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-music fa-lg"></i></div>
+                    <div class="word">音樂</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-clapperboard fa-lg"></i></div>
+                    <div class="word">電影</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-tower-broadcast fa-lg"></i></div>
+                    <div class="word">直播</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-gamepad fa-lg"></i></div>
+                    <div class="word">遊戲</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-regular fa-newspaper fa-lg"></i></div>
+                    <div class="word">新聞</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-trophy fa-lg"></i></div>
+                    <div class="word">體育</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-podcast fa-lg"></i></div>
+                    <div class="word">Podcast</div>
+                </div>
+            </div>
             <hr>
-            <li><a href=""><i class="fa-solid fa-circle-plus"></i>瀏覽頻道</a></li>
+            <div class="area">
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-circle-plus fa-lg"></i></div>
+                    <div class="word">瀏覽頻道</div>
+                </div>
+            </div>
             <hr>
-            <h2>更多Youtube功能</h2>
-            <li><a href=""><i class="fa-brands fa-youtube" style="color: #ff0000;"></i>YouTube Premiun</a></li>
-            <li><a href="">YouTube Music</a></li>
-            <li><a href="">YouTube Kids</a></li>
+            <div class="area">
+                <h3>更多YouTube功能</h3>
+                <div class="li">
+                    <div class="icon"><i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i> </div>
+                    <div class="word">YouTube Premiun</div>
+                </div>
+                <div class="li">
+                    <div id="music-img" class="icon"><img src="./image/YouTubeMusic_Logo.png" alt=""></div>
+                    <div class="word">YouTube Music</div>
+                </div>
+                <div class="li">
+                    <div id="kid-img" class="icon"><img src="./image/YouTube_Kids_LogoVector.svg.png"></div>
+                    <div class="word">YouTube Kids</div>
+                </div>
+            </div>
             <hr>
-            <li><a href=""><i class="fa-solid fa-gear"></i>設定</a></li>
-            <li><a href=""><i class="fa-regular fa-font-awesome"></i>檢舉紀錄</a></li>
-            <li><a href=""><i class="fa-regular fa-circle-question"></i>說明</a></li>
-            <li><a href="">提供意見</a></li>
+            <div class="area">
+                <div class="li">
+                    <div class="icon"><i class="fa-solid fa-gear fa-lg"></i></div>
+                    <div class="word">設定</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-regular fa-font-awesome fa-lg"></i></div>
+                    <div class="word">檢舉紀錄</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-regular fa-circle-question fa-lg"></i></div>
+                    <div class="word">說明</div>
+                </div>
+                <div class="li">
+                    <div class="icon"><i class="fa-regular fa-comment-dots fa-lg"></i></div>
+                    <div class="word">提供意見</div>
+                </div>
+            </div>
             <hr>
-        </ul>
+        </div>
+        <div id="footer">
+            <div class="guide">
+                <pre>
+簡介 媒體 版權 與我們聯絡
+創作者 廣告 開發人員
+</pre>
+            </div>
+            <div class="law">
+                <pre>
+條款 隱私 權政策與安全性
+YouTube運作方式 測試新功能
+</pre>
+            </div>
+            <div class="other">
+                <pre>
+© 2023 Google LLC
+</pre>
+            </div>
+        </div>
     </div>
+    <!-- ----------------------------------- -->
+    <div id="content-top">
+        <div id="my-tab">
+            <li>全部</li>
+            <li>音樂</li>
+            <li>新聞</li>
+            <li>遊戲</li>
+            <li>直播中</li>
+            <li>動畫</li>
+            <li>烹飪節目</li>
+            <li>美容訣竅</li>
+            <li>旅遊勝地</li>
+            <li>寵物</li>
+            <li>烹飪</li>
+            <li>卡通</li>
+            <li>最新上傳</li>
+        </div>
+    </div>
+    <!-- ----------------------------------- -->
     <div id="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus sequi doloremque suscipit nesciunt,
-        doloribus quis unde consequatur, aspernatur, possimus vero ipsum? Aliquid commodi doloremque minus optio maxime
-        voluptatum accusantium suscipit, fugiat sint dolor voluptatem inventore perspiciatis maiores deleniti eum modi!
-        Quod harum atque est nostrum quasi cupiditate odit maiores? Cupiditate at ad, nam fugit, temporibus quo
-        dignissimos quaerat earum ea atque itaque quos, dolorem officiis sit molestias? Veritatis odit eos ipsam
-        assumenda porro numquam illo, commodi vel sapiente suscipit ex soluta, nam rerum, fugit sed? Veniam non,
-        voluptatum possimus iure eum fuga eaque porro quibusdam rerum nostrum? Ut sint repudiandae hic aliquid
-        doloremque nemo numquam libero, possimus impedit pariatur quis delectus error et nulla quos rem aut minima
-        itaque quisquam modi officiis earum? Sequi qui corporis totam reprehenderit neque sint maxime, cupiditate iste
-        itaque dolorem illum placeat id odio omnis, dolore quasi dignissimos facere ducimus rerum est ratione eligendi
-        beatae tenetur. Repellat odit, iure enim, excepturi quia blanditiis perferendis fugit non sapiente porro
-        voluptatem beatae? Debitis aliquam, repudiandae animi, et quia laboriosam nemo sunt cupiditate magni harum
-        quidem saepe laudantium explicabo eligendi aut odio excepturi ipsa natus unde. Voluptas labore, ipsam
-        accusantium sint omnis repellat quasi incidunt totam facilis id cumque deleniti ipsa enim vel nisi corrupti
-        aliquid voluptate asperiores, architecto eveniet! Reiciendis facilis repellendus itaque praesentium non debitis
-        unde nulla qui ullam libero quos, delectus doloremque reprehenderit sapiente omnis amet, quia maxime vitae
-        voluptatibus quae minus! Molestias dicta expedita, et eius illo numquam soluta, maxime natus vero explicabo eos
-        possimus voluptas excepturi minus nisi totam dolorum sed fugiat iusto repellat voluptatum. Rerum dicta, nulla
-        maiores eius nesciunt, voluptatum impedit ipsa molestias modi tenetur repellat, ducimus tempora libero mollitia
-        nobis animi odit et commodi expedita culpa praesentium veniam minima! Possimus neque non qui, repudiandae totam
-        doloribus dignissimos distinctio mollitia cum temporibus ad quos consequatur itaque, alias, blanditiis et
-        aliquam ullam amet iusto hic sint rem aliquid ex? Facere laudantium officia dolores voluptatum distinctio esse
-        totam ipsum sunt velit, repudiandae quis quasi dicta ipsam. Accusantium quidem soluta animi quis ea
-        exercitationem odio voluptatem sapiente officiis provident praesentium fugit possimus magni, autem recusandae
-        atque nisi dolor illo vel sunt, delectus illum repellat! Enim facilis mollitia sequi nemo cum quos
-        necessitatibus maiores? Praesentium doloribus nulla minus quasi odio suscipit rerum alias quas neque, eveniet
-        aspernatur debitis eos dignissimos, provident, aliquam perspiciatis. Necessitatibus commodi quod quos nisi ab
-        ipsam accusantium, ut totam vitae, optio sequi velit nesciunt at quidem vel quae. Modi inventore cum obcaecati,
-        nisi quod hic molestiae incidunt ipsam ullam doloribus reiciendis odio iusto libero fugiat ut. Ducimus soluta
-        placeat omnis in, iure eius corrupti et illum quaerat, laborum debitis harum unde mollitia quasi est enim,
-        deserunt temporibus quis obcaecati vero ea qui doloribus aut! Cumque, vero? Molestiae repellat distinctio veniam
-        ullam necessitatibus consectetur alias enim dolores excepturi in beatae, molestias iusto error assumenda
-        recusandae sapiente ducimus, illum veritatis hic? Ratione, rem labore. Molestias obcaecati dolorum rerum.
-        Blanditiis, tempore veniam? Odit temporibus laboriosam ducimus eum eligendi corporis doloribus consequuntur ex
-        maxime earum, laudantium assumenda sint facere dolor expedita consequatur quo quos, distinctio quasi eveniet
-        asperiores, voluptate voluptatibus quas. Soluta, placeat dolor facilis sequi, accusantium excepturi at ipsam
-        quaerat minus unde dolorem temporibus rerum consectetur. Quasi doloremque perferendis, non, maxime nulla minus
-        vel dolore amet assumenda, ipsa blanditiis error corrupti ab ducimus omnis saepe? Error at voluptatibus deserunt
-        aliquam nisi consequuntur quo voluptas vel nesciunt quod omnis atque et accusantium fugiat ipsam id similique
-        suscipit, reprehenderit nemo. Minima perferendis recusandae eum suscipit officia molestiae error laboriosam esse
-        fugiat neque iste ipsam, repudiandae aperiam quo! Assumenda animi ducimus, nihil soluta voluptatibus minima esse
-        fuga veniam iusto maiores ex earum eius totam ipsa nisi, at distinctio nesciunt ratione nostrum necessitatibus
-        reprehenderit dolores? Aliquam esse, ducimus dolor nisi iure similique dolorem ex iste pariatur, optio
-        doloremque unde quod sunt atque architecto maiores mollitia consequuntur accusantium animi! Nostrum ea qui
-        dolorem voluptatibus iusto hic eos quia assumenda! Dolore inventore consectetur, et totam earum animi, maxime at
-        nostrum eligendi officia, soluta neque consequuntur velit consequatur est necessitatibus. Sit dolorem eaque
-        facere suscipit nisi ad dolor maiores aspernatur magni sapiente, quia quibusdam sunt ratione nam fugit, cum
-        adipisci voluptatum? Temporibus ab ipsa at veritatis? Asperiores ex inventore saepe adipisci minus quidem, fugit
-        perferendis blanditiis omnis ratione obcaecati quasi consectetur voluptatibus, eaque in ad dolorum vel? Ad
-        deleniti nobis itaque atque dolor qui quisquam aut temporibus placeat accusamus inventore veritatis suscipit,
-        nam sapiente iste, molestiae consequuntur impedit reprehenderit ratione odit dicta cum! Quae, harum obcaecati.
-        Quibusdam, quam maxime, expedita quia voluptatem quas voluptatibus adipisci voluptatum harum ducimus quis.
-        Mollitia id veniam fugiat? Repellendus obcaecati totam quos quisquam soluta esse odio, asperiores autem eaque
-        magnam! Commodi optio esse voluptatum alias tempore! Atque ad accusamus possimus cum temporibus! Voluptatibus
-        doloremque exercitationem, quidem eos atque, nam consequuntur ex laboriosam mollitia inventore deserunt iusto.
-        Dignissimos blanditiis tenetur unde, eveniet asperiores at id alias fuga repudiandae, sit inventore maiores
-        cumque neque excepturi accusamus error in itaque quae. Est cumque eius itaque similique vero earum distinctio?
-        Ducimus quasi, accusantium excepturi illo repudiandae suscipit perspiciatis dignissimos quia deleniti accusamus
-        expedita dolorum sequi sint amet quisquam vel molestiae consectetur rerum quae commodi necessitatibus ut.
-        Perspiciatis accusamus exercitationem sed maiores similique vel atque dolorum alias delectus corrupti. Saepe ut,
-        nam ipsam aliquid explicabo ea dolorum illum a ullam reprehenderit voluptatum temporibus obcaecati magni! Quis
-        sunt minus pariatur officiis et, provident numquam? Dicta sed sapiente ut corporis, exercitationem pariatur
-        vitae delectus vel minus libero possimus ullam distinctio consequatur aperiam error quia placeat perferendis
-        doloremque mollitia. Illo molestiae iure adipisci nesciunt distinctio aspernatur voluptatibus nostrum quidem,
-        fuga facilis perferendis porro fugiat, sint quae at sequi velit voluptate nihil repudiandae. Architecto
-        voluptatem laborum debitis sint facilis accusamus. Aperiam provident unde asperiores, aliquam porro deleniti,
-        voluptatibus nam nihil vitae natus perspiciatis minima rem! Nisi voluptatibus sint eaque maiores, ipsum vitae
-        unde nesciunt velit, dolorem officiis saepe accusamus explicabo dolor odit in possimus dolores debitis officia
-        consequatur. Placeat odit beatae fugit officiis voluptas omnis iusto veniam dolores neque quasi ut debitis
-        tenetur ea magni numquam deserunt, velit quis aut distinctio amet dolorum quam delectus ipsa. Incidunt,
-        dignissimos? Modi debitis autem quos ipsa sapiente iure reprehenderit quidem qui, a eligendi molestiae velit
-        fugiat non. Necessitatibus ut numquam vel tenetur eius, voluptas aliquid modi minima porro nemo? Omnis molestias
-        nostrum temporibus voluptatem veritatis esse facilis, corporis, ipsum ex fuga provident velit. At ab, rerum in
-        voluptates debitis laborum tempora quas eveniet explicabo esse doloribus quisquam voluptatibus omnis incidunt
-        reprehenderit iusto, repudiandae perferendis iure illum possimus nihil dolore odio temporibus? Harum dolore,
-        temporibus maiores aut ex labore eligendi neque praesentium eveniet qui ratione exercitationem cupiditate
-        mollitia eum totam tempora blanditiis accusamus id libero deserunt tenetur sit. Facilis culpa dolorem vero dicta
-        labore non, praesentium sed laudantium nisi earum sunt illo explicabo mollitia commodi corrupti sapiente optio
-        neque maiores facere quam numquam doloremque. Quibusdam totam, sequi blanditiis minima illum accusamus, ullam
-        quaerat animi molestias quasi expedita exercitationem. Saepe, similique. Rerum fugit at architecto, porro
-        provident perferendis ullam excepturi earum, accusamus cupiditate quos necessitatibus consequatur expedita quam!
-        Laudantium deserunt atque autem nihil vero perspiciatis quam omnis harum, neque molestias, repudiandae iure
-        maxime tenetur sit! Nostrum explicabo tenetur voluptas aliquid. Ipsa, ut iure! Quaerat ab laboriosam
-        consequuntur delectus dolorum illo? Obcaecati quam nesciunt eaque magnam expedita a eum reiciendis est amet
-        beatae, totam porro? Voluptatibus hic expedita a non recusandae itaque quisquam sequi quibusdam quidem
-        repudiandae perspiciatis porro tempora sit doloribus cum unde rerum, temporibus nemo nobis aliquid esse?
-        Delectus cumque distinctio labore consequatur nulla, ea nesciunt aliquam? Maiores labore, assumenda earum soluta
-        quo minus quia iste? Reiciendis, ullam deserunt exercitationem quod odit vero nemo inventore, cupiditate
-        voluptatem, impedit mollitia iste placeat culpa dolor eum rem magnam quaerat unde. Ut soluta ducimus nesciunt
-        reiciendis odit, exercitationem quas, laboriosam natus ad ipsa porro maiores iure inventore ullam sint sapiente
-        repellat. Omnis ipsa rem temporibus, quidem mollitia ut! Molestiae quos in consequatur assumenda a eum laborum
-        nihil excepturi dolores animi consequuntur veniam rem cumque aliquid temporibus aperiam officia, quasi itaque
-        velit perferendis, ex magni omnis. Eaque accusantium odit rem harum veniam, debitis laborum repellat doloribus
-        qui aliquid obcaecati animi, eos repudiandae alias explicabo. Sapiente necessitatibus suscipit repellat ab minus
-        vitae eveniet rem iusto blanditiis aspernatur facilis ipsam hic architecto, obcaecati ea at fuga provident
-        voluptate culpa omnis molestiae. Accusantium quaerat, sapiente illum aut libero accusamus! Quaerat ad maxime, in
-        hic qui dolor aperiam necessitatibus facilis, cumque odio, eum incidunt dolorum alias consectetur quam optio ut
-        a! Quam, eius? Voluptas, doloremque asperiores eligendi eaque illum repellat doloribus necessitatibus architecto
-        praesentium fugiat itaque autem adipisci sit repudiandae tempore ab non obcaecati nulla laudantium accusantium?
-        Totam veritatis eveniet, dignissimos, expedita ab minima corporis pariatur minus accusantium distinctio ex
-        facilis consequatur maxime illum. Voluptas minus suscipit vel perspiciatis ipsam officia eius molestiae
-        voluptatum aut natus iste ipsa fugiat tenetur sunt dolor inventore sed accusamus exercitationem vero expedita,
-        nemo, eligendi nostrum ex. Inventore, ratione ipsa est, nihil consectetur dolore dicta dolor placeat quisquam
-        hic cum nobis amet alias incidunt voluptatibus laborum eum rem exercitationem voluptatem praesentium soluta. Sed
-        cum a suscipit voluptate laborum officia aperiam eligendi quaerat officiis perspiciatis ducimus facilis,
-        corporis sit quis. Voluptatibus labore nesciunt consequuntur molestiae, eveniet hic magnam beatae asperiores
-        mollitia, reprehenderit autem natus, dignissimos est repellat porro harum illo. Nemo sed itaque voluptatem.
-        Blanditiis cumque mollitia debitis, libero commodi nostrum iure iste aliquam assumenda animi veritatis nihil
-        obcaecati delectus deleniti nulla facilis sapiente laudantium, enim, aliquid tempora maxime ducimus placeat
-        ipsum. Cum, temporibus maxime odit odio facilis dolor fuga deserunt laudantium non, saepe libero, quisquam
-        doloremque dolores consequatur! Totam enim amet eius mollitia. Voluptatum ex tenetur labore deleniti, quo
-        repellat enim velit, fuga distinctio reprehenderit soluta est alias quam perspiciatis, aut expedita perferendis?
-        Libero expedita optio inventore. Vitae inventore est minus rem autem, consectetur aperiam earum cupiditate porro
-        nobis aliquam exercitationem architecto eveniet minima nisi totam maiores delectus nulla libero perferendis
-        explicabo asperiores quod! Ipsa dignissimos, minima recusandae nihil in molestiae adipisci tempore iusto id
-        obcaecati? Rerum libero quibusdam exercitationem. Doloribus, temporibus ea velit magnam consequatur ullam libero
-        quidem dolor facilis assumenda amet? Suscipit explicabo eos aspernatur aliquam, quisquam porro incidunt
-        assumenda ipsam laudantium molestias modi quas at quam sed. Cupiditate voluptatibus animi commodi voluptatem
-        nisi deserunt doloribus cum autem ullam, enim natus eos hic neque dicta sequi consequatur mollitia perferendis
-        officiis alias reiciendis labore! Repellendus nobis temporibus, beatae fugiat aperiam, quasi ipsa totam aut ea
-        recusandae nostrum. Recusandae laudantium quas eaque aliquam enim labore, culpa ullam? Fuga dolore temporibus,
-        necessitatibus inventore voluptatibus aspernatur rerum expedita blanditiis eum totam odio commodi iste vel rem
-        dicta magni. Id perferendis incidunt ipsa maxime repudiandae quisquam odit hic laudantium officiis distinctio
-        quod repellendus, fuga facilis, amet, nobis quibusdam magnam velit ea iste similique. Harum necessitatibus illum
-        laboriosam praesentium, reprehenderit repellat tempore vero alias sequi. Deserunt expedita eum architecto,
-        possimus culpa incidunt delectus est aperiam temporibus dignissimos quia quo eligendi labore error, corrupti
-        beatae, alias sequi quaerat vero atque rem assumenda nisi omnis illo. Vel, iure repellat ratione molestias quod
-        tempore dignissimos labore nam illum animi, in adipisci debitis cumque. Porro pariatur adipisci a officiis
-        molestias repudiandae blanditiis consequatur nostrum, culpa, aspernatur, quo amet vero! Quisquam unde debitis
-        harum, ducimus similique facilis tempore. Dolorum error earum expedita aut officia! Quidem doloremque quibusdam
-        magni vitae rerum ullam officiis temporibus assumenda fugiat molestias obcaecati velit cupiditate impedit magnam
-        earum quod hic deserunt quam expedita nam, cumque, neque aliquid? Qui iusto necessitatibus explicabo a maiores
-        reiciendis officiis error assumenda alias fugiat doloremque adipisci, totam et? Voluptatum quaerat, labore
-        commodi neque aliquid facere obcaecati iusto totam incidunt aliquam autem. Aliquam, tempora ipsum nihil magnam
-        cupiditate quam porro autem quibusdam. Accusantium explicabo illum distinctio perferendis non! Quibusdam facilis
-        nostrum est iure quas, maiores fuga? Recusandae enim deleniti sunt? Nemo quis est incidunt voluptas architecto
-        nesciunt inventore at illo facere iure! Id fuga exercitationem maxime earum rerum natus, totam blanditiis error
-        placeat atque, nobis, nulla eius quam delectus. Exercitationem, ratione? Laudantium quos inventore saepe
-        maiores! Placeat laboriosam ex animi quis nam, sit sint eum doloribus soluta, inventore obcaecati earum
-        quibusdam sed consequuntur ipsam autem accusamus. Similique laborum incidunt quod id quibusdam quia suscipit
-        facilis perferendis maxime? Placeat omnis aliquid illum quasi vel dignissimos optio nemo quibusdam,
-        exercitationem nihil, ipsam aspernatur voluptatem totam qui doloribus ea dolore odit, provident beatae ut et
-        commodi labore aliquam nulla? Rem ab ea id praesentium doloremque non earum aspernatur unde reiciendis
-        temporibus officiis labore alias, asperiores soluta pariatur consectetur natus quo odio magni explicabo tenetur!
-        Accusantium, corrupti quaerat velit maxime, maiores atque molestiae illo ratione sit, praesentium adipisci nemo
-        accusamus ducimus assumenda tempore at nesciunt odio ut necessitatibus similique. Eos, fugit magni. Officiis
-        animi recusandae ut ducimus quasi omnis similique eum, perferendis, ipsum temporibus molestiae corrupti nesciunt
-        ratione. Placeat ipsa odit aliquam debitis distinctio exercitationem soluta voluptatibus neque perferendis!
-        Corporis laborum soluta, animi nihil doloribus minus placeat ipsam distinctio a accusamus repudiandae ipsa
-        aliquid sed. Culpa molestiae recusandae velit, excepturi fuga hic dolorem at id inventore corporis provident,
-        animi voluptate repellendus praesentium nam error nobis placeat nostrum tempore vel eaque! Perspiciatis nihil
-        modi quasi voluptatum ea eaque consectetur repellat voluptatibus facere, iste similique quos animi ducimus,
-        eveniet doloremque fuga quisquam corrupti inventore expedita laboriosam ipsa voluptates, necessitatibus alias?
-        Repudiandae vel possimus perspiciatis voluptates! Cumque aut voluptates ipsa veniam a aspernatur modi assumenda
-        ratione enim corporis vitae quam obcaecati nihil quos neque facere commodi porro ipsam rerum quis nobis
-        blanditiis, eos libero ab? Adipisci atque harum recusandae perferendis saepe est maxime eum culpa, in rerum
-        deserunt quis vero quaerat alias sequi, error nobis, nulla inventore voluptas. Aliquam id amet corporis tempore
-        quisquam vel delectus ducimus architecto corrupti repellat nemo sequi nobis eveniet aliquid illo, nulla earum?
-        Consequatur non fugit earum, deleniti itaque odio ipsa ullam beatae necessitatibus eos, sed optio! Sed eos
-        commodi dolor ipsam, perspiciatis dolorum? Porro recusandae possimus eveniet illo magnam adipisci officiis
-        tempore soluta, consequatur provident cumque voluptate odio deleniti ipsa et. Eum nihil consequuntur omnis
-        itaque quibusdam consectetur soluta distinctio, id, eligendi voluptas mollitia cupiditate est odio, voluptatum
-        animi vero ipsum quas? Maiores blanditiis culpa suscipit quaerat dolorem dolores? Dicta neque sit possimus id ut
-        odit voluptates tempore temporibus dolor tempora nulla nisi obcaecati laudantium eum nemo cumque nostrum a
-        incidunt consectetur repudiandae deserunt aliquam, ullam hic. Dolorum ad ex nulla accusamus id itaque
-        necessitatibus, expedita ab autem, laudantium officia porro tenetur corporis quaerat voluptatibus libero a error
-        alias rerum illum eveniet sit. Magni dolor blanditiis odio quasi aliquam, voluptatibus doloribus aliquid
-        provident officia quos animi molestias placeat, soluta voluptates fugiat ducimus ex, quibusdam culpa autem
-        excepturi. Eum magnam voluptate corporis dolore porro illo aliquid ut consectetur adipisci officiis obcaecati
-        vitae vero veritatis explicabo nostrum ratione veniam, similique libero exercitationem tempora quae odit? Autem
-        voluptas ex deserunt! Atque sequi mollitia veritatis quibusdam alias incidunt odio laborum ex dolores minima
-        ipsum at similique, placeat perspiciatis culpa totam autem, error, eos illum. Alias labore, doloremque magni a,
-        ut eius laboriosam quia corrupti necessitatibus eaque magnam id atque consectetur illo nulla dicta ratione quo
-        quisquam culpa possimus, similique enim voluptates! Dolor et, est iste vel velit quam nihil veniam esse quod
-        voluptate sit sequi nesciunt rerum recusandae excepturi incidunt quia autem nostrum exercitationem deleniti!
-        Debitis excepturi cupiditate nobis mollitia exercitationem possimus hic accusantium vel distinctio aliquam?
-        Totam, quisquam quia. Laboriosam nesciunt ratione obcaecati quis libero error tempore eum, vel ducimus minus
-        repudiandae doloribus necessitatibus corporis soluta dolorem ipsum debitis voluptate natus hic sint odio
-        similique. Vero incidunt totam cupiditate iusto iure. Vel nulla obcaecati aperiam ad! Qui veniam sed quam, in
-        non labore, ipsum, distinctio rem quia aliquam quidem consequatur reprehenderit earum veritatis voluptatum.
-        Officiis incidunt id ipsa. Similique distinctio tempore eveniet vero quia error officiis suscipit sapiente
-        dolorem ad architecto repellendus magni illum, sed ab quas, ipsam quasi adipisci vel. Deleniti, mollitia qui
-        ratione excepturi blanditiis officiis culpa fugit perspiciatis dignissimos quo ab voluptas eligendi aspernatur
-        eaque praesentium maiores odio velit aliquam error iure a consequuntur! Modi, in. Necessitatibus asperiores
-        natus ab sapiente sunt accusamus adipisci aliquid, tenetur explicabo beatae itaque ea vel eveniet rerum ullam
-        obcaecati assumenda autem ad laboriosam commodi quidem vero. Qui ipsa totam illo, similique, quaerat sapiente
-        excepturi optio id, obcaecati fuga at? Placeat corrupti, iure dolorem reprehenderit, sapiente molestias saepe
-        cupiditate beatae, quas praesentium laborum suscipit illum est rerum dicta alias mollitia quod ratione
-        accusamus. Maiores quaerat vero fugit reiciendis recusandae sequi cum suscipit quia eius, eaque quidem ex amet
-        quam quis sapiente nisi? Ipsum blanditiis veritatis atque rem odit repudiandae ea architecto illum modi
-        molestias? Iure suscipit repellat consectetur ab, voluptatum amet sit voluptas a eveniet, quas animi deleniti
-        minima dicta numquam magnam, eius quidem quos laudantium saepe neque laboriosam! Ducimus laboriosam expedita
-        iste, aliquid magnam perferendis at fuga deleniti molestiae deserunt alias reprehenderit distinctio quisquam
-        voluptate nemo obcaecati tempora dolorum praesentium eum inventore saepe. Autem repudiandae esse nobis sed
-        laboriosam est dicta sequi dolorum error, explicabo aut vero, vel natus sit dolorem assumenda omnis, repellat
-        commodi. Earum laboriosam provident reprehenderit minima, consequuntur libero facere ab placeat consectetur quos
-        et atque. Omnis nihil, deserunt exercitationem autem rem enim nulla aperiam ullam possimus iusto, dolorum
-        cupiditate nobis minus dolorem? Fuga culpa provident cumque pariatur saepe repellat accusantium vero corrupti
-        dolorem, modi, vitae fugit ad nesciunt quibusdam harum dolore? Molestiae, sit quis delectus voluptatibus
-        veritatis omnis commodi, facere nesciunt illo magni maiores eaque nihil et, nam quae fugit rerum! Molestias
-        quod, incidunt error voluptate nostrum molestiae quas optio unde impedit, consequuntur illum odio repudiandae
-        sint ad esse voluptatem commodi rerum? Velit est, recusandae praesentium voluptates dolores eum minus maiores,
-        quas deleniti itaque architecto accusamus, eos distinctio similique adipisci tempore quaerat sapiente nihil. Qui
-        nisi, ea fuga deserunt voluptatum molestiae pariatur distinctio sapiente obcaecati soluta totam tempora corporis
-        consequatur? Quibusdam maxime eius exercitationem, quaerat enim labore recusandae cum saepe at quia impedit?
-        Eligendi rerum id delectus amet architecto. Explicabo voluptas inventore harum illo dignissimos. Neque sed quia
-        nam officiis modi saepe porro vero dolor delectus voluptates nihil, itaque magni rerum voluptatum reprehenderit
-        quisquam sequi enim quidem similique architecto placeat non illo aperiam reiciendis? Aliquid blanditiis
-        consequuntur autem repellendus accusamus aut natus quidem libero.
+        <div class="vid-area">
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/易碎動物.webp" alt="">
+                    <div class="time">5:26</div>
+                </div>
+                <div class="channel"><img src="./image/unnamed.jpg"></div>
+                <div class="title">
+                    <p>【Glass Animals/易碎動物】The Other <br> Side of Paradise/天堂的另一面【中文翻譯】</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">光耀之夜</div>
+                <div class="view-when">觀看次數 : 144萬次 ‧ 3年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/BEME.webp" alt="">
+                    <div class="time">3:32</div>
+                </div>
+                <div class="channel"><img src="./image/doul.jpg"></div>
+                <div class="title">
+                    <p>BE ME</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Doul</div>
+                <div class="view-when">觀看次數:183萬次‧10個月前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/no-scared.webp" alt="">
+                    <div class="time">4:10</div>
+                </div>
+                <div class="channel"><img src="./image/oor channel.jpg"></div>
+                <div class="title">
+                    <p>ONE OK ROCK - NO SCARED [Official<br> Music Video]</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">ONE OK ROCK</div>
+                <div class="view-when">觀看次數:2276萬次‧11年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/faintwebp.webp">
+                    <div class="time">2:49</div>
+                </div>
+                <div class="channel"><img src="./image/linkinpark channel.jpg"></div>
+                <div class="title">
+                    <p>Faint (Official Music Video) [4K <br>UPGRADE] – Linkin Park</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Linkin Park</div>
+                <div class="view-when">觀看次數:4.1億次‧14年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/flymetothemoon.webp" alt="">
+                    <div class="time">2:28</div>
+                </div>
+                <div class="channel"><img src="./image/FrankSinatrachannel.jpg"></div>
+                <div class="title">
+                    <p>Fly Me To The Moon (2008 Remastered)</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Frank Sinatra</div>
+                <div class="view-when">觀看次數:1.5億次‧4年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/freebird.webp">
+                    <div class="time">9:11</div>
+                </div>
+                <div class="channel"><img src="./image/Lynyrd Skynyrd.jpg"></div>
+                <div class="title">
+                    <p>Lynyrd Skynyrd - Free Bird (Official Audio)</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Lynyrd Skynyrd</div>
+                <div class="view-when">觀看次數:1665萬次‧10個月前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/Freedom - Django Unchained.webp" alt="">
+                    <div class="time">3:57</div>
+                </div>
+                <div class="channel"><img src="./image/Rudinik I.N.C"></div>
+                <div class="title">
+                    <p>Freedom - Django Unchained</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Rudinik I.N.C</div>
+                <div class="view-when">觀看次數:9474萬次‧10年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/MACKLEMORE & RYAN LEWIS - CAN'T HOLD US FEAT. RAY DALTON (OFFICIAL MUSIC VIDEO).webp"
+                        alt="">
+                    <div class="time">7:04</div>
+                </div>
+                <div class="channel"><img src="./image/Macklemore.jpg"></div>
+                <div class="title">
+                    <p>MACKLEMORE & RYAN LEWIS -<br> CAN'T HOLD US FEAT. RAY DALTON (OFFICIAL MUSIC VIDEO)</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Macklemore</div>
+                <div class="view-when">觀看次數:10億次‧10年前</div>
+            </div>
+        </div>
+        <!-- ----------------------------------- -->
+        <h2><img src="./image/youtube-shorts..webp">Shorts</h2>
+        <div class="short-area">
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/toca toca.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">Toca Toca Anime | Dance <br>Tutorial (Slowed & Mirrored)</div>
+                <div class="short-view">觀看次數：1407萬次</div>
+            </div>
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/short2.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">Baby Snowy fun with kenzo <br>and dog 😻😂</div>
+                <div class="short-view">觀看次數：1546萬次</div>
+            </div>
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/short3.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">"Suzume" who sang it better <br>すずめ (Suzume) ft. 十明 - Suzume no Tojimari |
+                    Music
+                    covers competition</div>
+                <div class="short-view">觀看次數：100萬次</div>
+            </div>
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/short4.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">為什麼要對「這把槍」進行 <br>槍膛檢查的動作？《捍衛任務》</div>
+                <div class="short-view">觀看次數：70萬次</div>
+            </div>
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/short5.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">Water Archon Cries🥰<br> #genshinimpact #furina #neuville #shorts
+                    @GenshinImpact
+                </div>
+                <div class="short-view">觀看次數：116萬次</div>
+            </div>
+            <div class="shorts">
+                <div class="short-pic">
+                    <img src="./image/short6.webp" alt="">
+                </div>
+                <div class="short-btn"><i id="short-btn" class="fa-solid fa-ellipsis-vertical"
+                        style="color: #000000;"></i>
+                </div>
+                <div class="short-title">This might just be the coolest <br>gaming chair around! 🦂🔥 #supercarblondie
+                    #gaming #technology</div>
+                <div class="short-view">觀看次數：1102萬次</div>
+            </div>
+        </div>
+        <div id="line">
+            <div id="more">顯示完整資訊</div>
+            <hr>
+        </div>
+        <!-- ----------------------------------- -->
+        <div class="vid-area">
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/四眼田雞.webp" alt="">
+                    <div class="time">0:07</div>
+                </div>
+                <div class="channel"><img src="./image/四眼田雞_profile.jpg"></div>
+                <div class="title">
+                    <p>四眼田雞，你在看什麼啊?</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Xu MR</div>
+                <div class="view-when">觀看次數:7.2萬次‧2年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/嘻哈酷老頭.webp" alt="">
+                    <div class="time">0:20</div>
+                </div>
+                <div class="channel"><img src="./image/嘻哈酷老頭_profile.jpg"></div>
+                <div class="title">
+                    <p>海綿寶寶-嘻哈酷老頭 超勁爆!!</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">KevinBearr</div>
+                <div class="view-when">觀看次數:26萬次‧4年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/knife making.webp" alt="">
+                    <div class="time">13:24</div>
+                </div>
+                <div class="channel"><img src="./image/Koss.jpg"></div>
+                <div class="title">
+                    <p>Knife Making - Brass Titanium Frame <br>Lock Folder</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">Koss</div>
+                <div class="view-when">觀看次數:461萬次‧2年前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/arknight.webp" alt="">
+                    <div class="time">0:50</div>
+                </div>
+                <div class="channel"><img src="./image/ark_profile.jpg"></div>
+                <div class="title">
+                    <p>[ARKNIGHTS] Doc's Operation Basepoint</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">harlequin wheels</div>
+                <div class="view-when">觀看次數:22萬次‧3週前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/mococo.webp" alt="">
+                    <div class="time">0:16</div>
+                </div>
+                <div class="channel"><img src="./image/mococo_profile.jpg"></div>
+                <div class="title">
+                    <p>Mococo Beam</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">超級蘋果人SuperAppleMan</div>
+                <div class="view-when">觀看次數:37萬次‧1個月前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/memory.webp" alt="">
+                    <div class="time">3:56</div>
+                </div>
+                <div class="channel"><img src="./image/memory_profile.jpg"></div>
+                <div class="title">
+                    <p>Memory Reboot - Slowed</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">MrMoMMusic</div>
+                <div class="view-when">觀看次數:73萬次‧1個月前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/just2ofus.webp" alt="">
+                    <div class="time">3:59</div>
+                </div>
+                <div class="channel"><img src="./image/just2ofus_profile.jpg"></div>
+                <div class="title">
+                    <p>Just The Two Of Us(4K wallpaper version)</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">A freehug</div>
+                <div class="view-when">觀看次數:169萬次‧7個月前</div>
+            </div>
+            <div class="video">
+                <div class="pic">
+                    <img src="./image/jazz.webp" alt="">
+                    <div class="time">14:31</div>
+                </div>
+                <div class="channel"><img src="./image/jazz_profile.jpg"></div>
+                <div class="title">
+                    <p>Chord-Melody Jazz Guitar Lesson | Full <br>Practice Routine in C</p>
+                </div>
+                <div class="vid-btn"><i id="vid-btn" class="fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                </div>
+                <div class="channel-name">swiftlessons</div>
+                <div class="view-when">觀看次數:51萬次‧3年前</div>
+            </div>
+
+        </div>
     </div>
+
 </body>
 
 </html>
